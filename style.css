@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    margin: 20px auto;
+    height: 40vh;
+    width: 75vw;
+    border: thin black solid;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(#2c63a1, #24284d);
+}
+.playlist-info {
+    width:50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2vw;
+    color: white;
+}
+.play-pause1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(11, 209, 11);
+    height: 7vh;
+    width: 7vw;
+    border-radius: 30%;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.play-pause1:hover {
+    background: rgb(19, 243, 19);
+    font-weight: bold;
+    transition: 0.2s ease all;
+}
+.playlist-name {
+    font-size: 48px;
+    font-family: Courier, monospace;
+    margin-bottom: 2vh;
+}
+.playlist-stats {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.album-cover {
+    border: 1px thin black;
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.song-picker {
+    margin: 20px auto;
+    height: 40vh;
+    width: 75vw;
+    border: thin black solid;
+    display: flex;
+    flex-direction: column;
+    background: #1f2346;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 8px;
+    color: white;
+}
+tr {
+    background-image: linear-gradient(rgb(18, 47, 128), rgb(48, 48, 221));
+}
+
+.song {
+    text-align: center;
+    cursor: pointer;
+}
+
+.song:hover {
+    color: rgb(38, 255, 0);
+}
+tr:hover {
+    background: rgb(18, 47, 128);
+}
+#first-row:hover {
+    background-image: linear-gradient(rgb(18, 47, 128), rgb(48, 48, 221));
+}
+.fa-play-circle {
+    pointer-events: none;
+    visibility: hidden;
+
+}
+
+.play-song {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: #242d7e;
+    color: white;
+}
+
+.play-song .progress-bar {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.play-pause2 {
+    background: lightpink;
+    padding: 5px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player v1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" 
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" 
+    crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="album-cover">
+            <img src="./imgs/cover2.jpg" alt="album-cover">
+        </div>
+        <div class="playlist-info">
+            <div class="playlist-name"><b>Playlist</b>: Lofi-Hop</div>
+            <div class="playlist-stats">8 songs: 4 hrs 3 minutes</div>
+            <div class="play-pause1">Play</div>
+        </div>
+    </header>
+
+    <div class="song-picker">
+        <table>
+            <tr id="first-row" style="font-style:italic">
+                <td></td>
+                <td>TITLE</td>
+                <td>ARTIST</td>
+                <td>ALBUM</td>
+            </tr>
+            <tr>
+                <td class="song" data-name="In the Sunlight" data-song="./music/In the Sunlight.mp3" data-img="./imgs/cover2.jpg"><i class="far fa-play-circle fa-lg"></i></td>
+                <td>In the Sunlight</td>
+                <td>City Girl</td>
+                <td>Siren of the Formless</td>
+            </tr>
+            <tr>
+                <td class="song" data-name="Ji-Eun's Favorite" data-song="./music/Ji-Eun's Favorite.mp3" data-img="./imgs/cover2.jpg"><i class="far fa-play-circle fa-lg"></i></td>
+                <td>Ji-Eun's Favorite</td>
+                <td>City Girl</td>
+                <td>Siren of the Formless</td>
+            </tr>
+            <tr>
+                <td class="song" data-name="Ji-Eun's Sunset" data-song="./music/Ji-Eun's Sunset.mp3" data-img="./imgs/Neon Impulse.jpg"><i class="far fa-play-circle fa-lg"></i></td>
+                <td>Ji-Eun's Sunset</td>
+                <td>City Girl</td>
+                <td>Neon Impulse</td>
+            </tr>
+            <tr>
+                <td class="song" data-name="Redbone" data-song="./music/Redbone.mp3" data-img="./imgs/cover3.jpg"><i class="far fa-play-circle fa-lg"></i></td>
+                <td>Redbone</td>
+                <td>Dontcry</td>
+                <td>Redbone</td>
+            </tr>
+            <tr>
+                <td class="song" data-name="Dew" data-song="./music/Dew.mp3" data-img="./imgs/Kingdom in Blue.jpg"><i class="far fa-play-circle fa-lg"></i></td>
+                <td>Dew</td>
+                <td>Kupla</td>
+                <td>Kingdom in Blue</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="play-song">
+        <div class="progress-bar">
+            <div class="song-name">Ji-Eun's Favorite</div>
+            <div class="play-pause2">Play</div>
+        </div>
+        <audio class="current-song">
+            <source src="./music/Ji-Eun's Favorite.mp3">
+        </audio>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
